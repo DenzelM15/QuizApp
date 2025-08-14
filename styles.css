@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hammersmith One", sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Body Background and General Layout */
+body {
+    background-color: #2e003e; 
+    font-size: 16px; 
+    color: #e1d9f2; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+/* Main Container for the Quiz App */
+.app {
+    background-color: #3f1e58; 
+    max-width: 600px; 
+    width: 90%; 
+    margin: 100px auto; 
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    padding: 40px; 
+}
+
+/* Title Styling */
+.app h1 {
+    font-size: 30px; 
+    font-weight: 700; 
+    color: #f1e6ff; 
+    border-bottom: 2px solid #5a2a74; 
+    padding-bottom: 20px; 
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+
+/* Quiz Section Padding */
+.quiz {
+    padding: 20px 0;
+}
+
+/* Question Styling */
+.quiz h2 {
+    font-size: 22px; 
+    color: #f1e6ff; 
+    font-weight: 600;
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+/* Answer Buttons Container */
+#answer-buttons {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.btn {
+    color: #f1e6ff; 
+    background: #5a2a74;
+    font-weight: 500;
+    border: 1px solid #7b1fa2; 
+    padding: 15px; 
+    margin: 10px 0; 
+    text-align: left;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    font-size: 16px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Button Hover Effect */
+.btn:hover:not([disabled]) {
+    background: #7b1fa2; 
+    color: #ffffff; 
+    transform: translateY(-2px); 
+}
+
+/* Disabled Button Styling */
+.btn:disabled {
+    cursor: no-drop; /
+    opacity: 0.5; 
+}
+
+/* Next Button Styling */
+#next-btn {
+    background-color: #5a2a74; 
+    color: #f1e6ff; 
+    font-weight: 500;
+    width: 160px; 
+    border: 0; 
+    padding: 12px; 
+    margin: 20px auto 0; 
+    cursor: pointer; 
+    display: none; 
+    border-radius: 5px; 
+    font-size: 18px; 
+    transition: all 0.3s ease; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+/* Next Button Hover Effect */
+#next-btn:hover {
+    background-color: #4a1f5d; 
+    transform: translateY(-2px); 
+}
+
+/* Correct Answer Styling (Dark Green when selected) */
+.correct {
+    background: #388e3c; 
+    border-color: #2e7d32; 
+    color: #ffffff; 
+}
+
+/* Incorrect Answer Styling */
+.incorrect {
+    background: #d32f2f; 
+    border-color: #c62828; 
+    color: #ffffff; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .app {
+        padding: 20px; /
+    }
+    
+    .btn {
+        font-size: 14px; 
+        padding: 12px; 
+    }
+
+    #next-btn {
+        font-size: 16px; 
+        width: 140px; 
+    }
+}
