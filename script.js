@@ -45,7 +45,7 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0; // Track current question number
-let score = 0;                // Track the user's score
+let score = 0;                
 
 // Starts the quiz from the beginning
 function startQuiz() {
@@ -58,7 +58,7 @@ function startQuiz() {
 // Display the current question and answer buttons
 function showQusetion() {
 	
-    resetstate(); // Clear previous answers/buttons
+    resetstate(); 
 	
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
@@ -149,4 +149,5 @@ function handelNextButton() {
 }
 
 // Start the quiz when the page loads
+
 startQuiz();
