@@ -1,4 +1,7 @@
-
+/* 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
+ */
 // Array of questions, each with text and possible answers
 const questions = [
     {
@@ -7,7 +10,7 @@ const questions = [
             { text: "&lt;head&gt;", correct: false },
             { text: "&lt;title&gt;", correct: true },
             { text: "&lt;meta&gt;", correct: false },
-            { text: "&lt;header&gt;", correct: false },
+            { text: "&lt;header&gt;", correct: false }
         ]
     },
     {
@@ -16,7 +19,7 @@ const questions = [
             { text: "font-color", correct: false },
             { text: "color", correct: true },
             { text: "text-color", correct: false },
-            { text: "background-color", correct: false },
+            { text: "background-color", correct: false }
         ]
     },
     {
@@ -25,7 +28,7 @@ const questions = [
             { text: "// this is a comment", correct: false },
             { text: "/* this is a comment */", correct: true },
             { text: "&lt;!-- this is a comment --&gt;", correct: false },
-            { text: "# this is a comment", correct: false },
+            { text: "# this is a comment", correct: false }
         ]
     },
     {
@@ -34,9 +37,9 @@ const questions = [
             { text: "var", correct: true },
             { text: "int", correct: false },
             { text: "string", correct: false },
-            { text: "float", correct: false },
+            { text: "float", correct: false }
         ]
-    },
+    }
 ];
 
 // DOM elements we will manipulate
@@ -90,7 +93,7 @@ function resetstate() {
 	
 	// Remove all children buttons from answerButtons container
     while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild)
+        answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
@@ -104,19 +107,19 @@ function selectAnswer(e) {
         selectedBtn.classList.add("correct");
         score++;
     } else {
-        selectedBtn.classList.add("incorrect")
+        selectedBtn.classList.add("incorrect");
     }
 	
 	// Show correct answers and disable all buttons after selection
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
-            button.classList.add("correct")
+            button.classList.add("correct");
         }
         button.disabled = true;
     });
 	
 	// Show the next button after an answer is chosen
-    nextButton.style.display = "block"
+    nextButton.style.display = "block";
 }
 
 // Show final score and option to retry
@@ -124,7 +127,7 @@ function showScore() {
     resetstate();
     questionElement.innerHTML = `You scrord ${score} out of ${questions.length} !`;
     nextButton.innerHTML = "Another Try";
-    nextButton.style.display = "block"
+    nextButton.style.display = "block";
 }
 
 
@@ -135,7 +138,7 @@ nextButton.addEventListener("click", () => {
     } else {
         startQuiz();
     }
-})
+});
 
 
 // Moves to next question or shows score at the end
@@ -151,3 +154,4 @@ function handelNextButton() {
 // Start the quiz when the page loads
 
 startQuiz();
+
