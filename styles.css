@@ -1,3 +1,12 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 20 Aug 2025, 18:48:18
+    Author     : Student
+*/
+
 /* Global Styles */
 * {
     margin: 0;
@@ -90,7 +99,7 @@ body {
 
 /* Disabled Button Styling */
 .btn:disabled {
-    cursor: no-drop; /
+    cursor: no-drop; 
     opacity: 0.5; 
 }
 
@@ -135,7 +144,7 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 480px) {
     .app {
-        padding: 20px; /
+        padding: 20px; 
     }
     
     .btn {
