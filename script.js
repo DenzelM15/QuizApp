@@ -1,7 +1,4 @@
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
- */
+
 // Array of questions, each with text and possible answers
 const questions = [
     {
@@ -47,7 +44,7 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
-let currentQuestionIndex = 0; // Track current question number
+let currentQuestionIndex = 0; 
 let score = 0;                
 
 // Starts the quiz from the beginning
@@ -154,4 +151,5 @@ function handelNextButton() {
 // Start the quiz when the page loads
 
 startQuiz();
+
 
